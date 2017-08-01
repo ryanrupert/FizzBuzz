@@ -2,22 +2,25 @@
 
 int main()
 {
-  for (size_t i = 0; i < 100; i++)
+  for (int i = 0; i < 100; i++)
   {
     std::string output = "";
-    if(i % 3 == 0)
+    if (i % 3 == 0 && i % 5 == 0)
     {
-      output = "Fizz";
+      std::cout << "FizzBuzz" << std::endl;
     }
-    if(i % 5 == 0)
+    else if (i % 3 == 0)
     {
-      output = output + "Buzz";
+      std::cout << "Fizz" << std::endl;
+    }
+    else if (i % 5 == 0)
+    {
+      std::cout << "Buzz" << std::endl;
     }
     else
     {
-      output = i;
+      std::cout << i << std::endl;
     }
-    std::cout << output << std::endl;
   }
   std::cin.get();
   return 0;
