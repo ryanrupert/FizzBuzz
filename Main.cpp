@@ -2,7 +2,7 @@
 
 int main()
 {
-  for (int i = 0; i < 100; i++)
+  for (int i = 1; i < 100; i++)
   {
     std::string output = "";
     if (i % 3 == 0 && i % 5 == 0)
